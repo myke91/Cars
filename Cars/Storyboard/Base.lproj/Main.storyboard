@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="InI-Mr-S89">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cars-->
+        <scene sceneID="zwx-Ra-DIW">
+            <objects>
+                <collectionViewController id="LEg-4v-gfM" customClass="CarsViewController" customModule="Cars" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Vw5-4u-8fJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vir-yl-jem">
+                            <size key="itemSize" width="411" height="534"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="CarCell" id="gJy-d5-Dei" customClass="CarCollectionViewCell" customModule="Cars" customModuleProvider="target">
+                                <rect key="frame" x="1.5" y="0.0" width="411" height="534"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3qc-9d-zuq">
+                                    <rect key="frame" x="0.0" y="0.0" width="411" height="534"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci8-Rg-rZn" customClass="Gradient" customModule="Cars" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="370" width="411" height="164"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHJ-uO-FcP" userLabel="title">
+                                                    <rect key="frame" x="0.0" y="78" width="411" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tc-Sg-AHF" userLabel="date">
+                                                    <rect key="frame" x="0.0" y="115" width="411" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmi-rC-eXt" userLabel="desc">
+                                                    <rect key="frame" x="0.0" y="139" width="411" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="IHJ-uO-FcP" secondAttribute="trailing" id="3t7-db-WyP"/>
+                                                <constraint firstItem="Gmi-rC-eXt" firstAttribute="leading" secondItem="Ci8-Rg-rZn" secondAttribute="leading" id="52I-aj-qhL"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gmi-rC-eXt" secondAttribute="bottom" constant="8" id="Nt3-AB-57t"/>
+                                                <constraint firstItem="0Tc-Sg-AHF" firstAttribute="leading" secondItem="Ci8-Rg-rZn" secondAttribute="leading" id="PRd-bM-SBr"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Tc-Sg-AHF" secondAttribute="trailing" id="PUN-3n-qMt"/>
+                                                <constraint firstItem="IHJ-uO-FcP" firstAttribute="leading" secondItem="Ci8-Rg-rZn" secondAttribute="leading" id="Rhk-xe-Ni4"/>
+                                                <constraint firstItem="Gmi-rC-eXt" firstAttribute="top" secondItem="0Tc-Sg-AHF" secondAttribute="bottom" constant="8" id="XBp-Zc-DIf"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gmi-rC-eXt" secondAttribute="trailing" id="ZA3-Xn-cco"/>
+                                                <constraint firstItem="0Tc-Sg-AHF" firstAttribute="top" secondItem="IHJ-uO-FcP" secondAttribute="bottom" constant="8" id="dMa-57-E4W"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                                    <real key="value" value="-1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ci8-Rg-rZn" firstAttribute="leading" secondItem="3qc-9d-zuq" secondAttribute="leading" id="3MV-Lx-YPS"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ci8-Rg-rZn" secondAttribute="trailing" id="6Is-bG-FvT"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ci8-Rg-rZn" secondAttribute="bottom" id="BVM-Fm-VWs"/>
+                                        <constraint firstItem="Ci8-Rg-rZn" firstAttribute="top" relation="lessThanOrEqual" secondItem="3qc-9d-zuq" secondAttribute="top" constant="370" id="DXU-xR-TII"/>
+                                        <constraint firstItem="Ci8-Rg-rZn" firstAttribute="top" secondItem="3qc-9d-zuq" secondAttribute="top" constant="370" id="xEW-Bi-t7i"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="411" height="534"/>
+                                <connections>
+                                    <outlet property="dateTimeView" destination="0Tc-Sg-AHF" id="cJs-bH-g7K"/>
+                                    <outlet property="descriptionView" destination="Gmi-rC-eXt" id="1Cm-EO-EPq"/>
+                                    <outlet property="titleView" destination="IHJ-uO-FcP" id="lt5-xI-oYq"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="LEg-4v-gfM" id="CWb-0x-xRT"/>
+                            <outlet property="delegate" destination="LEg-4v-gfM" id="jgK-ev-z22"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Cars" id="XCt-Ns-Lyd"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5Y-6X-bjN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="103.79464285714285"/>
+        </scene>
+        <!--Cars-->
+        <scene sceneID="Vlx-rC-el1">
+            <objects>
+                <navigationController title="Cars" automaticallyAdjustsScrollViewInsets="NO" id="InI-Mr-S89" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DgO-VK-bQ5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LEg-4v-gfM" kind="relationship" relationship="rootViewController" id="Aso-AL-tUN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJV-DV-Sel" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.71014492753625" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>
